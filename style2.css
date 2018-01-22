@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css?family=Bungee+Inline|Oswald');
+@font-face {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Oswald Regular'), local('Oswald-Regular'), url(https://fonts.gstatic.com/s/oswald/v16/_P8jt3Y65hJ9c4AzRE0V1OvvDin1pK8aKteLpeZ5c0A.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+  }
+  @font-face {
+    font-family: 'Bungee Inline';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Bungee Inline'), local('BungeeInline-Regular'), url(https://fonts.gstatic.com/s/bungeeinline/v3/Tb-1914q4rFpjT-F66PLCQYWpCd0FFfjqwFBDnEN0bM.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+  }
+/* Use the 'Oswald' font family at 14px throughout the body of the document. */
+nav {font-family: sans-serif; font-size: 10px;}
+body { font-family: 'Oswald';
+font-size: 14px;}
+
+#main {width: 900px; margin: 10px auto;}
+/* Use the 'Bungee Inline' font at 46px and lighter weight for the restaurant name. */
+h1 { font-family:Bungee Inline;
+font-size: 46px;
+font-weight: lighter;}
+
+#menu {columns: 420px 2; column-gap: 60px;}
+section {margin-bottom: 20px; padding: 10px;
+text-transform: uppercase;}
+
+/* Show each of the section headings of the menu (e.g. "Starters") in uppercase. */
+h2 {margin-top: 0;}
+
+/* Make the name of each menu item appear in bold in a 16px size. */
+dt {display: inline;
+  font-size: 16px;
+  font-weight: bold;
+}
+/* Make a comma appear after the name of each menu item (before the description) */
+
+dd {display: inline; margin: 0;}
+
+dd::after {content: " "; display: block; clear: both; margin-bottom: 15px;}
+dt {display: inline; margin: 0;}
+dt::after {
+  content: ", ";
+}
+.price {float: right; padding: 0 0 35px 20px;}
+address { text-align: right;}
+
+/* Right-align the text of the address/footer */
+
+/* draw a 2px thick black border around the starters and desserts sections of the menu */
+#desserts {
+  border: 2px solid black;
+}
+#starters {
+  border: 2px solid black;
+}
